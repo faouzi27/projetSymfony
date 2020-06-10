@@ -1,0 +1,79 @@
+classe_homepage:
+    path:     /
+    defaults: { _controller: ClasseBundle:Default:index }
+
+classe_Ajout:
+    path:     /admin/AjoutClasse
+    defaults: { _controller: ClasseBundle:Classe:AjouterClass }
+
+classe_Afficher:
+    path:     /admin/AfficherClasse
+    defaults: { _controller: ClasseBundle:Classe:AfficheClasse }
+
+classe_Supprimer:
+    path:     /admin/SupprimerClass/{id}
+    defaults: { _controller: ClasseBundle:Classe:deleteClasse }
+
+classe_Modifier:
+    path:     /admin/ModifierClass/{id}
+    defaults: { _controller: ClasseBundle:Classe:ModifierClasse }
+
+AllUser:
+    path:     /admin/AllUser
+    defaults: { _controller: ClasseBundle:Classe:AllUser }
+
+ClasseByNiveau:
+    path:     /admin/ClasseByNiveau/{id}
+    defaults: { _controller: ClasseBundle:Classe:AfficheClassebyNiveau }
+
+
+Affecter:
+    path:     /admin/Affecter/{idc}/{idu}
+    defaults: { _controller: ClasseBundle:Classe:AffecterClass }
+
+
+AffechierAffecter:
+    path:     /admin/AffichierAffecter/{id}
+    defaults: { _controller: ClasseBundle:Classe:AfficheClassebyApprenant }
+
+
+deleteAffecter:
+    path:     /admin/deleteAffecter/{id}
+    defaults: { _controller: ClasseBundle:Classe:deleteAffecter }
+
+AjouterNote:
+    path:     /admin/AjouterNote/{id}
+    defaults: { _controller: ClasseBundle:Note:AjouterNote }
+
+AfficheNote:
+    path:     /admin/AfficheNote/{id}
+    defaults: { _controller: ClasseBundle:Note:AfficheNote }
+
+ModifierNote:
+    path:     /admin/ModifierNote/{id}/{idc}
+    defaults: { _controller: ClasseBundle:Note:ModifierNote }
+
+
+deleteNote:
+    path:     /admin/suuprimerNote/{id}
+    defaults: { _controller: ClasseBundle:Note:deleteNote }
+
+Absence:
+    path:     /admin/Absence/{id}/{idu}
+    defaults: { _controller: ClasseBundle:Absence:AjouterAbsence }
+
+Front:
+    path:     /Parent/MyKids
+    defaults: { _controller: ClasseBundle:Absence:AfficheEnfantParnet }
+
+FrontNote:
+    path:     /Parent/MyKidsNote/{id}
+    defaults: { _controller: ClasseBundle:Absence:AfficheParnetNoteEnfant }
+
+FrontMyInfo:
+    path:     /Apprenant/MyInfo
+    defaults: { _controller: ClasseBundle:Absence:AfficheMonInfo }
+
+stat:
+    path:     /admin/Statistique
+    defaults: { _controller: ClasseBundle:Statistique:index }
